@@ -1,17 +1,17 @@
 :root{
     --primary-color:#FF6000;
     --secondary-color:#FFA559;
-    --tertiary-color:#FFE6C7;
+    --tertiary-color:#eeddc9;
     --quaternary-color:#454545;
 
     --primary-color-bis:#3E54AC;
     --secondary-color-bis:#655DBB;
-    --tertiary-color-bis:#BFACE2;
-    --quaternary-color-bis:#ECF2FF;
+    --tertiary-color-bis:#e2dfda;
+    --quaternary-color-bis:#d0d1d4;
 }
 
 .bouton{
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: black;
 }
 
@@ -60,4 +60,28 @@ html body{
 
 .fa-solid,.fa-regular{
     color:var(--secondary-color);
+}
+
+.menuicon{
+    font-size: 2rem;
+    position: absolute;
+    left:1rem;
+    top:1rem;
+}
+
+.option-menu{
+    display: none;
+    position: absolute;
+}
+
+.closebutton{
+    position:fixed;
+    top:1rem;
+    left:11.5%
+}
+.closebutton>.fa-solid{
+    color:var(--quaternary-color);
+}
+.blackicon{
+    color:var(--quaternary-color);
 }

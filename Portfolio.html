@@ -10,12 +10,29 @@
     <link rel="stylesheet" href="customcss.css">
 </head>
 <body class="htmlclass">
+    <i class=" menuicon fa-solid fa-bars" onmouseover="menuHover(this,'true')" onmouseout="menuHover(this,'false')" onclick="toggleMenu('true')"></i>
+    <div id="option-menu"class="option-menu">
+        <div class="row">
+            <span class="row"><p><i class="fa-solid fa-screwdriver-wrench blackicon"></i> Options</p></span>
+            <p class=" closebutton col-sm-1"><i class=" menuicon fa-solid fa-xmark" onclick="toggleMenu('false')"></i></p>
+        </div>
+        </br>
+        <div>
+            <div class="row">
+                <span class="row col-sm-7"><p class=""><i class="fa-solid fa-eye blackicon"></i> Theme</p></span>
+                <div class="form-check form-switch col-sm-2">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked onchange="themeSwitch()">
+                    <label class="form-check-label" for="flexSwitchCheckChecked">Dark</label>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class=" column content">
         <div class="container buttonlist">
             <div class="row justify-content-around">
-                <button type="button" id="aboutmebutton"class="btn bouton col-md-3" onclick="showArea('aboutme')">Qui suis-je ?</button>
-                <button type="button" class="btn bouton col-md-3" onclick="showArea('project')">Mes projets</button>
-                <button type="button" class="btn bouton col-md-3" onclick="showArea('contactme')">Me contacter</button>
+                <button type="button" id="aboutmebutton"class="btn bouton col-md-3" onclick="showArea('aboutme')" onmouseover="buttonHover(this,'true')" onmouseout="buttonHover(this,'false')">Qui suis-je ?</button>
+                <button type="button" class="btn bouton col-md-3" onclick="showArea('project')"onmouseover="buttonHover(this,'true')" onmouseout="buttonHover(this,'false')">Mes projets</button>
+                <button type="button" class="btn bouton col-md-3" onclick="showArea('contactme')"onmouseover="buttonHover(this,'true')" onmouseout="buttonHover(this,'false')">Me contacter</button>
             </div>
         </div>
         <div id="aboutme" class="row aboutme justify-content-center">
