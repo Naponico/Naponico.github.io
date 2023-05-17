@@ -1,0 +1,63 @@
+:root{
+    --primary-color:#FF6000;
+    --secondary-color:#FFA559;
+    --tertiary-color:#FFE6C7;
+    --quaternary-color:#454545;
+
+    --primary-color-bis:#3E54AC;
+    --secondary-color-bis:#655DBB;
+    --tertiary-color-bis:#BFACE2;
+    --quaternary-color-bis:#ECF2FF;
+}
+
+.bouton{
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+.aboutme{
+    display:none;
+}
+.project{
+    display: none;
+}
+.contactme{
+    display:none;
+}
+.contentpanel{
+    margin-top:2rem;
+    background-color: var(--tertiary-color);
+    width:50%;
+    margin-left: 25%;
+    border-radius: 2.5rem;
+}
+.buttonlist{
+    margin-top: 2rem;
+}
+.htmlclass{
+    background-color: var(--quaternary-color);
+}
+html body{
+    width:100%;
+    height:100%;
+    overflow-x:hidden;
+}
+.profilepicture{
+    margin-top:0.25rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-color: var(--quaternary-color);
+    border-style: solid;
+    float:top;
+}
+.presentationtext{
+    font-size: small;
+}
+.headertext{
+    margin-top:0.5rem;
+}
+
+.fa-solid,.fa-regular{
+    color:var(--secondary-color);
+}
